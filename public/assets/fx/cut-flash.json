@@ -1,0 +1,76 @@
+{
+  "dimensions": 2,
+  "field": {
+    "width": 72,
+    "height": 72
+  },
+  "durationMs": 600,
+  "fps": 60,
+  "loop": false,
+  "forces": {
+    "drag": 0.5,
+    "radial": 25
+  },
+  "emitters": [
+    {
+      "name": "spark",
+      "shape": "disc",
+      "position": [
+        36,
+        36,
+        0
+      ],
+      "extent": {
+        "radius": 5,
+        "size": [
+          0,
+          0,
+          0
+        ]
+      },
+      "emission": {
+        "mode": "burst",
+        "count": 26,
+        "atMs": 0
+      },
+      "lifetimeMs": 600,
+      "lifetimeSpread": 140,
+      "speed": 90,
+      "speedSpread": 35,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "coneAngle": 360,
+      "particle": {
+        "sizeCurve": {
+          "interp": "easeOut",
+          "from": 1.3,
+          "to": 0.05
+        },
+        "opacityCurve": {
+          "interp": "easeIn",
+          "from": 0.72,
+          "to": 0
+        },
+        "colorGradient": [
+          {
+            "color": "#fff8c9",
+            "at": 0
+          },
+          {
+            "color": "#ffffff",
+            "at": 0.4
+          },
+          {
+            "color": "#6356ff",
+            "at": 1
+          }
+        ],
+        "rotation": 120,
+        "stretch": 1.5
+      }
+    }
+  ]
+}
